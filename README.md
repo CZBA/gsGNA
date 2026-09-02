@@ -21,5 +21,6 @@ The pipeline was developed and benchmarked on **rice (Oryza sativa)** leaf RNA-s
 - Reverse screening for novel regulatory TFs based on core pathway target genes
 
 ## Pipeline Workflow
-                          <img width="693" height="853" alt="image" src="https://github.com/user-attachments/assets/007cd571-a00d-41a6-af21-8508f4fe8b5f" />
+<img width="693" height="853" alt="image" src="https://github.com/user-attachments/assets/22836793-a221-4567-800d-bfeb52d8e9c2" />
+
 
