@@ -1,16 +1,24 @@
-# gsGNA: A Universal Pipeline for Mining Plant Stress‑Resistance Regulators
+# gsGNA: A General Pipeline for Mining Plant Stress-Resistance Regulators
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![R](https://img.shields.io/badge/R-4.0+-blue.svg)](https://www.r-project.org/)
+[![Python](https://img.shields.io/badge/Python-3.8+-green.svg)](https://www.python.org/)
+[![DOI](https://img.shields.io/badge/DOI-pending-blue.svg)]()
 
 ## Overview
 
-gsGNA (General Stress‑resistance Gene Regulatory Network) is a universal computational pipeline for identifying plant stress‑resistance regulators using multi‑algorithm gene regulatory network (GRN) inference.
+gsGNA (General Stress-resistance Gene Regulatory Network) is a computational pipeline for identifying plant stress-resistance regulators via multi-algorithm ensemble gene regulatory network (GRN) inference. The pipeline integrates six base GRN inference algorithms and six ensemble fusion strategies, selects the optimal strategy via multi-layer validation, and constructs high-confidence GRNs for downstream regulator mining.
+
+The pipeline was developed and benchmarked on **rice (Oryza sativa)** leaf RNA-seq data under three abiotic stresses (drought, alkaline, cold), with external validation on three biotic stress datasets.
 
 **Key features:**
 - Integrates **six** GRN inference algorithms: GENIE3, KBoost, GRNBoost2, 3DCEMA, DeepRIG, IGEGRNS
-- Supports multiple abiotic stress conditions (drought, alkaline, cold)
-- Multi‑layer validation using ChIP‑seq, TFBS, and DEGs
-- Network topology analysis (small‑world, scale‑free)
-- Functional module detection and GO/KEGG enrichment
-- Reverse screening for novel regulatory TFs
+- Compares **six** ensemble fusion strategies: AdaBoost, Bagging, Stacking, XGBoost, hard voting, quantile rank fusion
+- Multi-layer validation using ChIP-seq (AUROC/AUPR), TFBS overlap, and TF overexpression/interference DEGs
+- Network topology analysis (scale-free, small-world)
+- Functional module detection (8 clustering algorithms) and GO/KEGG enrichment
+- Key TF identification via degree centrality with permutation-based significance testing
+- Reverse screening for novel regulatory TFs based on core pathway target genes
+
+## Pipeline Workflow
+
