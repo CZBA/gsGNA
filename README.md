@@ -41,7 +41,7 @@ The six base GRN inference algorithms are **not bundled** in this repository. Pl
 | Algorithm | Language | Installation / Source | Reference |
 |---|---|---|---|
 | GENIE3 | R | `BiocManager::install("GENIE3")` ([link](https://bioconductor.org/packages/GENIE3)) | Huynh-Thu et al. 2010 |
-| KBoost | R | `install.packages("KBoost")` ([link](https://cran.r-project.org/package=KBoost)) | Iglesias-Martinez et al. 2021 |
+| KBoost | R | `install.packages("KBoost")` ([link](https://bioconductor.org/packages/KBoost)) | Iglesias-Martinez et al. 2021 |
 | GRNBoost2 | Python | `pip install arboreto` ([link](https://github.com/aertslab/arboreto)) | Moerman et al. 2019 |
 | 3DCEMA | Python | [github.com/YueFan1014/3DCEMA](https://github.com/YueFan1014/3DCEMA) | Fan & Ma. 2021 |
 | DeepRIG | Python | [github.com/JChander/DeepRIG](https://github.com/JChander/DeepRIG) | Wang et al. 2023 |
