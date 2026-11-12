@@ -27,7 +27,8 @@ The pipeline was developed and evaluated using **rice** (*Oryza sativa*) leaf RN
 ## Pipeline Workflow
 
 <p align="center">
-  <img src="figures/gsGNA_workflow.png" alt="gsGNA pipeline workflow" width="85%">
+  <img width="85%" alt="gsGNA pipeline workflow"
+       src="https://github.com/user-attachments/assets/1870263c-ab07-4212-8d3e-19b4c83b2966" />
 </p>
 
 The gsGNA pipeline consists of four main stages:
