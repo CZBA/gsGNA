@@ -26,7 +26,9 @@ The pipeline was developed and evaluated using **rice** (*Oryza sativa*) leaf RN
 
 ## Pipeline Workflow
 
-<img width="693" height="853" alt="gsGNA pipeline workflow" src="https://github.com/user-attachments/assets/22836793-a221-4567-800d-bfeb52d8e9c2" />
+<p align="center">
+  <img src="figures/gsGNA_workflow.png" alt="gsGNA pipeline workflow" width="85%">
+</p>
 
 The gsGNA pipeline consists of four main stages:
 
@@ -57,30 +59,28 @@ Additional R and Python packages are required for ensemble learning, network ana
 ```text
 gsGNA/
 ├── code/
-│   ├── ensemble method/          # Six ensemble fusion strategies
-│   │   ├── AdaBoost.R
-│   │   ├── Bagging.R
-│   │   ├── Stacking.R
-│   │   ├── XGBoost.R             # Selected ensemble strategy
-│   │   ├── Hard_Voting.R
-│   │   ├── Quantile_Rank_Fusion_QRF.R
-│   │   ├── Evaluate_*.R          # Evaluation scripts
-│   │   ├── Evaluation_QRF.R
-│   │   └── XGB_Biotic_Stress.R   # Biotic-stress applications
+│   ├── gsGNA_Ensemble_Comparison.R
+│   │   # Six fusion strategies, 57 subsets,
+│   │   # TF-wise CV, nested CV, and model selection
 │   │
-│   ├── Network validation/       # TFBS and DEG validation
-│   ├── RNAseq_TF_analysis.R      # Data preprocessing and TF analysis
-│   ├── hub_TF_identification.R   # Hub TF identification
-│   ├── GRN_module_identification.R  # Module detection
-│   ├── Abiotic_TF_Enrichment.R   # GO/KEGG enrichment
-│   ├── core_pathway_TF_screening.R  # Pathway-guided reverse screening
-│   └── Abiotic_Radar_Plot.R      # Network visualization
+│   ├── XGB_Biotic_Stress.R
+│   │   # Cross-context biotic-stress analysis
+│   │
+│   ├── Network validation/
+│   │   # TFBS and DEG validation
+│   │
+│   ├── RNAseq_TF_analysis.R
+│   ├── hub_TF_identification.R
+│   ├── GRN_module_identification.R
+│   ├── Abiotic_TF_Enrichment.R
+│   ├── core_pathway_TF_screening.R
+│   └── Abiotic_Radar_Plot.R
 │
 ├── data/
-│   ├── Osj_TF_list.txt           # Rice TF annotation (PlantTFDB v5.0)
-│   ├── chip_data.txt             # ChIP-seq-supported interactions
-│   ├── BioMart_data.txt          # Gene annotation
-│   └── ...                       # Example expression datasets
+│   ├── Osj_TF_list.txt
+│   ├── chip_seq.csv
+│   ├── BioMart_data.txt
+│   └── ...
 │
 ├── .gitignore
 ├── LICENSE
@@ -97,22 +97,4 @@ The RNA-seq datasets used in this study are publicly available from the NCBI Gen
 | Rice leaf | Alkaline stress | [GSE104928](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104928) |
 | Rice leaf | Cold stress | [GSE112547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112547) |
 | *Magnaporthe oryzae* | Biotic (external application) | [GSE113553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113553) |
-| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157400) |
-| Rice stripe virus | Biotic (external application) | [GSE176497](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176497) |
-
-The biotic-stress datasets were used to explore the applicability of the ensemble framework in additional biological contexts and were not treated as independent abiotic-stress validation datasets.
-
-## Citation
-
-Manuscript under preparation. Citation information and DOI will be updated upon publication.
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For questions or issues, please open an issue on GitHub or contact the corresponding authors:
-
-- Xuemei Wei (wxm201@dali.edu.cn)
-- Junpeng Zhang (zjp@dali.edu.cn)
+| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih
