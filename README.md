@@ -97,4 +97,22 @@ The RNA-seq datasets used in this study are publicly available from the NCBI Gen
 | Rice leaf | Alkaline stress | [GSE104928](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104928) |
 | Rice leaf | Cold stress | [GSE112547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112547) |
 | *Magnaporthe oryzae* | Biotic (external application) | [GSE113553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113553) |
-| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih
+| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157400) |
+| Rice stripe virus | Biotic (external application) | [GSE176497](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176497) |
+
+The biotic-stress datasets were used to explore the applicability of the ensemble framework in additional biological contexts and were not treated as independent abiotic-stress validation datasets.
+
+## Citation
+
+Manuscript under preparation. Citation information and DOI will be updated upon publication.
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or issues, please open an issue on GitHub or contact the corresponding authors:
+
+- Xuemei Wei (wxm201@dali.edu.cn)
+- Junpeng Zhang (zjp@dali.edu.cn)
