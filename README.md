@@ -73,9 +73,9 @@ gsGNA/
 │   ├── RNAseq_TF_analysis.R
 │   ├── hub_TF_identification.R
 │   ├── GRN_module_identification.R
-│   ├── Abiotic_TF_Enrichment.R
-│   ├── core_pathway_TF_screening.R
-│   └── Abiotic_Radar_Plot.R
+│   ├── Infomap_stability_analysis.R
+│   ├── GRN_Conservation_Analysis.R
+│   └── core_pathway_TF_screening.R
 │
 ├── data/
 │   ├── Osj_TF_list.txt
