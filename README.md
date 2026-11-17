@@ -97,9 +97,9 @@ The RNA-seq datasets used in this study are publicly available from the NCBI Gen
 | Rice leaf | Drought stress | [GSE121303](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE121303) |
 | Rice leaf | Alkaline stress | [GSE104928](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE104928) |
 | Rice leaf | Cold stress | [GSE112547](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE112547) |
-| *Magnaporthe oryzae* | Biotic (external application) | [GSE113553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113553) |
-| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157400) |
-| Rice stripe virus | Biotic (external application) | [GSE176497](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176497) |
+| *Magnaporthe oryzae* | Biotic (external application) | [GSE157400](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE157400)  |
+| *Nephotettix cincticeps* feeding | Biotic (external application) | [GSE176497](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE176497) |
+| Rice stripe virus | Biotic (external application) | [GSE113553](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE113553) |
 
 The biotic-stress datasets were used to explore the applicability of the ensemble framework in additional biological contexts and were not treated as independent abiotic-stress validation datasets.
 
